@@ -5,13 +5,13 @@ import org.junit.jupiter.api.*;
 public class CustomTest {
 
     @Test
-    @DisplayName("테스트의 내용을 한 눈에 알아볼 수 있게 네이밍을 해줄 때")
+    @DisplayName("테스트 내용 작성")
     void test(){
         System.out.println("테스트 내용 빠르게 파악");
     }
 
     @Nested
-    @DisplayName("주제 별로 테스트를 그룹지어서 파악하기 좋습니다.")
+    @DisplayName("1. 주제별 그룹화")
     @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
     class Test1 {
 
@@ -38,7 +38,7 @@ public class CustomTest {
     }
 
     @Nested
-    @DisplayName("Test2 다른 주제")
+    @DisplayName("2. 주제별 그룹화")
     class Test2 {
         @Test
         @DisplayName("Test2 - test1()")
